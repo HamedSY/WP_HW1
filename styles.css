@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.formula-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.formula-section h2 {
+    margin-top: 0;
+    color: #3498db;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.result {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e8f4fc;
+    border-radius: 4px;
+}
+
+.result label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+formula {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .formula-section {
+        padding: 15px;
+    }
+}
