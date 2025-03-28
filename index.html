@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Formula Evaluator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Formula Calculator</h1>
+        
+        <div class="formula-section">
+            <h2>Simple Purchase Calculator</h2>
+            <div class="input-group">
+                <label for="fee">Unit Price:</label>
+                <input type="number" id="fee" placeholder="Enter unit price">
+            </div>
+            <div class="input-group">
+                <label for="count">Quantity:</label>
+                <input type="number" id="count" placeholder="Enter quantity">
+            </div>
+            <div class="input-group">
+                <label for="discount">Discount:</label>
+                <input type="number" id="discount" placeholder="Enter discount">
+            </div>
+            <div class="result">
+                <label>Total:</label>
+                <formula evaluator="count*fee-discount"></formula>
+            </div>
+        </div>
+
+        <div class="formula-section">
+            <h2>Rectangle Area Calculator</h2>
+            <div class="input-group">
+                <label for="width">Width:</label>
+                <input type="number" id="width" placeholder="Enter width">
+            </div>
+            <div class="input-group">
+                <label for="height">Height:</label>
+                <input type="number" id="height" placeholder="Enter height">
+            </div>
+            <div class="result">
+                <label>Area:</label>
+                <formula evaluator="width*height"></formula>
+            </div>
+        </div>
+
+        <div class="formula-section">
+            <h2>BMI Calculator</h2>
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" placeholder="Enter weight">
+            </div>
+            <div class="input-group">
+                <label for="height2">Height (m):</label>
+                <input type="number" id="height2" placeholder="Enter height">
+            </div>
+            <div class="result">
+                <label>BMI:</label>
+                <formula evaluator="weight/(height2*height2)"></formula>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
